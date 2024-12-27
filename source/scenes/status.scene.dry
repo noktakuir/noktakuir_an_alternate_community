@@ -10,86 +10,86 @@ if (Q.inflation) {
 }
 !}
 
-= Status
+= Durum
 
 [+ month : month +] [+ year +]
 
-Resources available: [+ resources +]
+Mevcut kaynaklar: [+ resources +]
 
-SPD position: [? if spd_toleration : toleration ?][? if spd_in_government : in government - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : opposition ?][? if spd_caretaker : caretaker government ?]
-[? if in_weimar_coalition and spd_in_government: Weimar Coalition ?][? if in_grand_coalition and spd_in_government: Grand Coalition ?][? if in_popular_front and spd_in_government: Popular Front ?][? if in_left_front and spd_in_government: Left Front ?][? if in_spd_majority and spd_in_government: SPD majority ?][? if in_minority_government and spd_in_government: minority government ?][? if in_emergency_government and spd_in_government: emergency government ?]
+NKP pozisyonu: [? if spd_toleration : tolerasyon ?][? if spd_in_government : yönetimde - ?][? if spd_toleration == 0 and spd_in_government == 0 and spd_caretaker == 0 : muhalefet ?][? if spd_caretaker : bekçi̇ hükümet ?]
+[? if in_weimar_coalition and spd_in_government: Kuir Koalisyonu ?][? if in_grand_coalition and spd_in_government: Büyük Koalisyon ?][? if in_popular_front and spd_in_government: Topluluk Cephesi ?][? if in_left_front and spd_in_government: Sol Cephe ?][? if in_spd_majority and spd_in_government: NKP çoğunluğu ?][? if in_minority_government and spd_in_government: azınlık yönetimi ?][? if in_emergency_government and spd_in_government: ohal yönetimi ?]
 
-[? if spd_in_government and not in_spd_majority and not in_left_front : Coalition dissent: [+ coalition_dissent : coalition_dissent +] ?]
+[? if spd_in_government and not in_spd_majority and not in_left_front : Koalisyon muhalefeti: [+ coalition_dissent : coalition_dissent +] ?]
 
-[? if spd_in_government and (in_left_front or in_popular_front): KPD coalition dissent: [+ kpd_coalition_dissent : coalition_dissent +] ?]
+[? if spd_in_government and (in_left_front or in_popular_front): DTP koalisyon muhalefeti: [+ kpd_coalition_dissent : coalition_dissent +] ?]
 
-Internal dissent: [+ dissent_percent : dissent +]
+İç muhalefet: [+ dissent_percent : dissent +]
 
-= Government
+= Yönetim
 
-President: [+ president +]
+Yönetici: [+ president +]
 
-Chancellor: [+ chancellor +] ([+ chancellor_party +])
+Başmoderatör: [+ chancellor +] ([+ chancellor_party +])
 
-Reichstag composition:
+Meclis dağılımı:
 
 # 1928: 30, 1930: 25, 1932: 22
-{!<span class="tooltip-text" title="Social Democratic Party of Germany">SPD</span>!}: [+ spd_r +]%
-[? if sapd_formed and sapd_r > 0: SAPD: [+ sapd_r +]% ?]
+{!<span class="tooltip-text" title="noktaKuir Partisi">NKP</span>!}: [+ spd_r +]%
+[? if sapd_formed and sapd_r > 0: NKİP: [+ sapd_r +]% ?]
 # 1928: 15, 1930: 15, 1932: 
-{!<span class="tooltip-text" title="Center Party + Bavarian People's Party">Z + BVP</span>!}: [+ z_r +]%
+{!<span class="tooltip-text" title="Merkez Grup">MG</span>!}: [+ z_r +]%
 # 1928: 10, 1930: 13
-{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_r +]%
+{!<span class="tooltip-text" title="Devrimci Topluluk Partisi">DTP</span>!}: [+ kpd_r +]%
 # 1928: 5, 1930: 4 (as DstP)
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_r +]%
+{!<span class="tooltip-text" title="Sol Liberal Grup">!}[? if not ddp_name: SLG?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_r +]%
 # 1928: 9, 1930: 5
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_r +]%
+{!<span class="tooltip-text" title="Liberal Milliyetçi Grup">LMG</span>!}: [+ dvp_r +]%
 # 1928: 14, 1930: 7
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_r +]%
+{!<span class="tooltip-text" title="4chan">4CH</span>!}: [+ dnvp_r +]%
 # 1928: 3, 1930: 18
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_r +]%
+{!<span class="tooltip-text" title="Circlejerk">CCJ</span>!}: [+ nsdap_r +]%
 # 1928: 9, 1930: 10
-Others: [+ other_r +]%
+Diğerleri: [+ other_r +]%
 
-[? if spd_in_government = 1 : Budget: [+ budget +] ?]
+[? if spd_in_government = 1 : Bütçe: [+ budget +] ?]
 
-Inflation: [+ inflation_2 +]%
+Gerilim: [+ inflation_2 +]%
 
-[? if black_thursday_seen = 1 : Unemployment: [+ unemployed_2 +]% ?]
+[? if black_thursday_seen = 1 : Aktifsizlik: [+ unemployed_2 +]% ?]
 
-Next election: [+ next_election_month : month +] [+ next_election_year +]
+Sonraki seçim: [+ next_election_month : month +] [+ next_election_year +]
 
 
-# = Public Opinion
+# = Kamuoyu Görüşü
 
 @politics
 
-= Inter-party Relations
+= Gruplararası ilişkiler
 
 
-{!<span class="tooltip-text" title="Center Party">Z</span>!}: [+ z_relation : relationships +]
+{!<span class="tooltip-text" title="Merkez Grup">MG</span>!}: [+ z_relation : relationships +]
 
-{!<span class="tooltip-text" title="German Democratic Party">!}[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
+{!<span class="tooltip-text" title="Sol Liberal Grup">!}[? if not ddp_name: SLG?][? if ddp_name != 0 : [+ ddp_name +]?]{!</span>!}: [+ ddp_relation : relationships +]
 
-{!<span class="tooltip-text" title="German People's Party">DVP</span>!}: [+ dvp_relation : relationships +]
+{!<span class="tooltip-text" title="Liberal Milliyetçi Grup">LMG</span>!}: [+ dvp_relation : relationships +]
 
-{!<span class="tooltip-text" title="Communist Party of Germany">KPD</span>!}: [+ kpd_relation : relationships +]
+{!<span class="tooltip-text" title="Devrimci Topluluk Partisi">DTP</span>!}: [+ kpd_relation : relationships +]
 
-{!<span class="tooltip-text" title="German National People's Party">DNVP</span>!}: [+ dnvp_relation : relationships +]
+{!<span class="tooltip-text" title="4chan">4CH</span>!}: [+ dnvp_relation : relationships +]
 
-{!<span class="tooltip-text" title="National-Socialist German Worker's Party (Nazis)">NSDAP</span>!}: [+ nsdap_relation : relationships +]
+{!<span class="tooltip-text" title="Circlejerk">CCJ</span>!}: [+ nsdap_relation : relationships +]
 
-= Internal Factions of the SPD
+= NKP'nin İç Gruplaşmaları
 
-{!<span class="tooltip-text" title="The Left is interested in radical, transformative policies and cooperation with the KPD.">Left</span>!} strength: [+ left_strength : strength +], dissent: [+ left_dissent : dissent +]
+{!<span class="tooltip-text" title="Sol kanat, radikal, dönüştürücü politikalar ve DTP ile işbirliği ile ilgilenmektedir.">Sol</span>!} gücü: [+ left_strength : strength +], muhalefet: [+ left_dissent : dissent +]
 
-{!<span class="tooltip-text" title="The Center is a faction of Center Marxists, between reform and revolution.">Center</span>!} strength: [+ center_strength : strength +], dissent: [+ center_dissent : dissent +]
+{!<span class="tooltip-text" title="Merkez kanat, radikal ve ilerici arası ortacı bir denge politikası güder.">Merkez</span>!} gücü: [+ center_strength : strength +], muhalefet: [+ center_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Labor's goal is economic reform and benefits for organized workers.">Labor</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_dissent : dissent +]
+{!<span class="tooltip-text" title="Popülist kanat, olabildiğince büyük kitlelere hitap etmeye çalışır.">Popülist</span>!} gücü: [+ labor_strength : strength +], muhalefet: [+ labor_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Reformists are pragmatic participants in government, and seek to expand the welfare state and defend democracy.">Reformist</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
+{!<span class="tooltip-text" title="Progresifler yönetimin pragmatik katılımcılarıdır, toplulukta huzuru arttırmaya ve demokrasiyi savunmaya çalışırlar.">Progresif</span>!} gücü: [+ reformist_strength : strength +], muhalefet: [+ reformist_dissent : dissent +]
 
-[? if neorevisionism > 0 : Neorevisionist strength: [+ neorevisionist_strength : strength +], dissent: [+ neorevisionist_dissent : dissent +] ?]
+[? if neorevisionism > 0 : Neoprogresif gücü: [+ neorevisionist_strength : strength +], muhalefet: [+ neorevisionist_dissent : dissent +] ?]
 
 
 @paramilitaries
@@ -108,72 +108,72 @@ if (Q.sa_strength) {
 }
 !}
 
-= Paramilitaries
+= Örgütlülük
 
-{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Reichsbanner</span>!} Strength: [+ rb_strength_2 +] thousand
+{!<span class="tooltip-text" title="NKDD (noktaKuir Dayanışma Derneği) yoğunlukla NKP'ye bağlı, topluluk hareketliliğini ve bilincini arttırmaya yönelik dernektir.">NKDD</span>!} Kuvvet: [+ rb_strength_2 +] kişi
 
-Reichsbanner Militarization: [+ rb_militancy : militancy +]
+NKDD Militanlığı: [+ rb_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The RFB (Rotfrontkämpferbund) is a communist group associated with the KPD.">RFB</span>!} Strength: [+ rfb_strength_2 +] thousand
+{!<span class="tooltip-text" title="MLD (Militan Dergisi) DTP'ye bağlı dergi çevresi organizasyonudur.">MLD</span>!} Kuvvet: [+ rfb_strength_2 +] kişi
 
-RFB Militarization: [+ rfb_militancy : militancy +]
+MLD Militanlığı: [+ rfb_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The Stahlhelm is a right-wing organization of war veterans associated with the DNVP.">Stahlhelm</span>!} Strength: [+ sh_strength_2 +] thousand
+{!<span class="tooltip-text" title="Sıçanlar, 4CH kitlesinin merkeziyetsiz militan kesiminin kendilerine verdikleri isimdir.">Sıçanlar</span>!} Kuvvet: [+ sh_strength_2 +] kişi
 
-Stahlhelm Militarization: [+ sh_militancy : militancy +]
+Sıçanlar Militanlığı: [+ sh_militancy : militancy +]
 
-{!<span class="tooltip-text" title="The SA (Sturmabteilung) is the Nazi paramilitary.">SA</span>!} Strength: [+ sa_strength_2 +] thousand
+{!<span class="tooltip-text" title="4T (4traa), çoğunluğunu CCJ kitlesinin oluşturduğu aşırı sağ kuir organizasyonudur.">4T</span>!} Kuvvet: [+ sa_strength_2 +] kişi
 
-SA Militarization: [+ sa_militancy : militancy +]
+4T Militanlığı: [+ sa_militancy : militancy +]
 
-= Official military/paramilitaries
+= Kolluk Kuvvetleri
 
-Reichswehr: [+ reichswehr_strength +] thousand troops.
+Moderasyon: [+ reichswehr_strength +] kişi
 
-Reichswehr Loyalty: [+ reichswehr_loyalty : loyalty +]
+Moderasyon Sadakati: [+ reichswehr_loyalty : loyalty +]
 
-Prussian police: [+ prussian_police_strength +] thousand members.
+Reddit Moderasyonu: [+ prussian_police_strength +] kişi
 
-Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
+Reddit Moderasyon Sadakati: [+ prussian_police_loyalty : loyalty +]
 
-[? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
+[? if spd_in_government : Discord Moderasyon Sadakati: [+ interior_police_loyalty : loyalty +] ?]
 
 @polls
 
-= Projected election results
+= Tahmini seçim sonuçları
 
-(if the election were to be held now):
+(eğer seçimler bu pazar olsaydı):
 
-SPD: [+ spd_votes +]%
+NKP: [+ spd_votes +]%
 
-[? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
+[? if sapd_formed: NKİP: [+ sapd_votes +]% ?]
 
-Z + BVP: [+ z_votes +]%
+MG: [+ z_votes +]%
 
-KPD: [+ kpd_votes +]%
+DTP: [+ kpd_votes +]%
 
-[? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ ddp_votes +]%
+[? if not ddp_name: SLG?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ ddp_votes +]%
 
-DVP: [+ dvp_votes +]%
+LMG: [+ dvp_votes +]%
 
-DNVP: [+ dnvp_votes +]%
+4CH: [+ dnvp_votes +]%
 
-NSDAP: [+ nsdap_votes +]%
+CCJ: [+ nsdap_votes +]%
 
-Others: [+ other_votes +]%
+Diğerleri: [+ other_votes +]%
 
-**Detailed results for each demographic**
+**Her demografik grup için ayrıntılı sonuçlar**
 
-Workers: SPD: [+ workers_spd_display +]%, Z: [+ workers_z_display +]%, KPD: [+ workers_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ workers_ddp_display +]%, DVP: [+ workers_dvp_display +]%; DNVP: [+ workers_dnvp_display +]%, NSDAP: [+ workers_nsdap_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
+Öğrenciler: NKP: [+ workers_spd_display +]%, MG: [+ workers_z_display +]%, DTP: [+ workers_kpd_display +]%, [? if not ddp_name: SLG?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ workers_ddp_display +]%, LMG: [+ workers_dvp_display +]%; 4CH: [+ workers_dnvp_display +]%, CCJ: [+ workers_nsdap_display +]%, Diğerleri: [+ workers_other_display +]% [? if sapd_formed: NKİP: [+ workers_sapd_display +]% ?]
 
-New Middle Class: SPD: [+ new_middle_spd_display +]%, Z: [+ new_middle_z_display +]%, KPD: [+ new_middle_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ new_middle_ddp_display +]%, DVP: [+ new_middle_dvp_display +]%; DNVP: [+ new_middle_dnvp_display +]%, NSDAP: [+ new_middle_nsdap_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
+Woke: NKP: [+ new_middle_spd_display +]%, MG: [+ new_middle_z_display +]%, DTP: [+ new_middle_kpd_display +]%, [? if not ddp_name: SLG?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ new_middle_ddp_display +]%, LMG: [+ new_middle_dvp_display +]%; 4CH: [+ new_middle_dnvp_display +]%, CCJ: [+ new_middle_nsdap_display +]%, Diğerleri: [+ new_middle_other_display +]% [? if sapd_formed: NKİP: [+ new_middle_sapd_display +]% ?]
 
-Old Middle Class: SPD: [+ old_middle_spd_display +]%, Z: [+ old_middle_z_display +]%, KPD: [+ old_middle_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ old_middle_ddp_display +]%, DVP: [+ old_middle_dvp_display +]%; DNVP: [+ old_middle_dnvp_display +]%, NSDAP: [+ old_middle_nsdap_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
+Gamerlar: NKP: [+ old_middle_spd_display +]%, MG: [+ old_middle_z_display +]%, DTP: [+ old_middle_kpd_display +]%, [? if not ddp_name: SLG?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ old_middle_ddp_display +]%, LMG: [+ old_middle_dvp_display +]%; 4CH: [+ old_middle_dnvp_display +]%, CCJ: [+ old_middle_nsdap_display +]%, Diğerleri: [+ old_middle_other_display +]% [? if sapd_formed: NKİP: [+ old_middle_sapd_display +]% ?]
 
-Rural: SPD: [+ rural_spd_display +]%, Z: [+ rural_z_display +]%, KPD: [+ rural_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ rural_ddp_display +]%, DVP: [+ rural_dvp_display +]%; DNVP: [+ rural_dnvp_display +]%, NSDAP: [+ rural_nsdap_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?]
+Transmedikalistler: NKP: [+ rural_spd_display +]%, MG: [+ rural_z_display +]%, DTP: [+ rural_kpd_display +]%, [? if not ddp_name: SLG?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ rural_ddp_display +]%, LMG: [+ rural_dvp_display +]%; 4CH: [+ rural_dnvp_display +]%, CCJ: [+ rural_nsdap_display +]%, Diğerleri: [+ rural_other_display +]% [? if sapd_formed: NKİP: [+ rural_sapd_display +]% ?]
 
-Unemployed: SPD: [+ unemployed_spd_display +]%, Z: [+ unemployed_z_display +]%, KPD: [+ unemployed_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ unemployed_ddp_display +]%, DVP: [+ unemployed_dvp_display +]%; DNVP: [+ unemployed_dnvp_display +]%, NSDAP: [+ unemployed_nsdap_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
+Ortamcılar: NKP: [+ unemployed_spd_display +]%, MG: [+ unemployed_z_display +]%, DTP: [+ unemployed_kpd_display +]%, [? if not ddp_name: SLG?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ unemployed_ddp_display +]%, LMG: [+ unemployed_dvp_display +]%; 4CH: [+ unemployed_dnvp_display +]%, CCJ: [+ unemployed_nsdap_display +]%, Diğerleri: [+ unemployed_other_display +]% [? if sapd_formed: NKİP: [+ unemployed_sapd_display +]% ?]
 
-Catholics: SPD: [+ catholics_spd_display +]%, Z: [+ catholics_z_display +]%, KPD: [+ catholics_kpd_display +]%, [? if not ddp_name: DDP?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ catholics_ddp_display +]%, DVP: [+ catholics_dvp_display +]%; DNVP: [+ catholics_dnvp_display +]%, NSDAP: [+ catholics_nsdap_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
+Asimilasyoncular: NKP: [+ catholics_spd_display +]%, MG: [+ catholics_z_display +]%, DTP: [+ catholics_kpd_display +]%, [? if not ddp_name: SLG?][? if ddp_name != 0 : [+ ddp_name +]?]: [+ catholics_ddp_display +]%, LMG: [+ catholics_dvp_display +]%; 4CH: [+ catholics_dnvp_display +]%, CCJ: [+ catholics_nsdap_display +]%, Diğerleri: [+ catholics_other_display +]% [? if sapd_formed: NKİP: [+ catholics_sapd_display +]% ?]
 
-Support for the Republic: [+ pro_republic +]%
+Topluluk sistemine destek: [+ pro_republic +]%
