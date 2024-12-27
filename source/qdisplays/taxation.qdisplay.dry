@@ -1,10 +1,10 @@
 
-(..-6) extremely low
-(-5..-4) very low
-(-3..-2) low
-(-1..-1) below baseline
-(0..0) moderate
-(1..1) above baseline
-(2..3) high
-(4..5) very high
-(6..) extremely high
+(..-6) son derece düşük
+(-5..-4) çok düşük
+(-3..-2) düşük
+(-1..-1) taban düzeyin altında
+(0..0) orta
+(1..1) taban düzeyin üzerinde
+(2..3) yüksek
+(4..5) çok yüksek
+(6.) son derece yüksek
