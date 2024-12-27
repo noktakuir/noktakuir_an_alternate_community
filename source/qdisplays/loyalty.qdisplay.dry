@@ -1,10 +1,10 @@
 
 # loyalty for police + reichswehr
-(..0.06) tamamen sadakatsiz
-(0.06..0.19) çok sadakatsiz
-(0.19..0.31) genellikle sadakatsiz
-(0.31..0.41) çoğunlukla sadakatsiz
-(0.41..0.54) karışık
-(0.54..0.71) çoğunlukla sadık
-(0.71..0.95) genellikle sadık
-(0.95..) tamamen sadık
+(..0.06) completely disloyal
+(0.06..0.19) very disloyal
+(0.19..0.31) generally disloyal
+(0.31..0.41) mostly disloyal
+(0.41..0.54) divided
+(0.54..0.71) mostly loyal
+(0.71..0.95) generally loyal
+(0.95..) completely loyal
