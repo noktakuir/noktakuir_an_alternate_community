@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta prefix="ifiction: http://babel.ifarchive.org/protocol/iFiction/"
         property="ifiction:ifid" content="7FCDF039-2B77-4179-B795-CBAFA65253AA">
-    <title>Social Democracy: An Alternate History - Autumn Chen</title>
+    <title>r/kuir: Devrimin Evrimi - heike lola</title>
     <link rel="stylesheet" type="text/css" href="game.css">
     <script src="jquery-1.11.1.min.js"></script>
     <script src="d3.v7.min.js"></script>
@@ -26,16 +26,16 @@
             <table>
                 <tr>
                     <td>
-                        Backgrounds:
+                        Arkaplanlar:
                     </td>
                     <td>
-                        <label for="backgrounds_yes">On</label>
+                        <label for="backgrounds_yes">Açık</label>
                     </td>
                     <td>
                         <input type="radio" id="backgrounds_yes" name="backgrounds" value="1" onclick="window.enableBg();">
                     </td>
                     <td>
-                        <label for="backgrounds_no">Off</label>
+                        <label for="backgrounds_no">Kapalı</label>
                     </td>
                     <td>
                         <input type="radio" id="backgrounds_no" name="backgrounds" value="0" onclick="window.disableBg();">
@@ -46,15 +46,15 @@
                 </tr>
                 <tr>
                     <td>
-                        Event images:
+                        Olay resimleri:
                     <td>
-                        <label for="images_yes">On</label>
+                        <label for="images_yes">Açık</label>
                     </td>
                     <td>
                         <input type="radio" id="images_yes" name="images" value="1" onclick="window.enableImages();">
                     </td>
                     <td>
-                        <label for="images_no">Off</label>
+                        <label for="images_no">Kapalı</label>
                     </td>
                     <td>
                         <input type="radio" id="images_no" name="images" value="0" onclick="window.disableImages();">
@@ -66,16 +66,16 @@
  
                 <tr>
                     <td>
-                        Animations:
+                        Animasyonlar:
                     </td>
                     <td>
-                        <label for="animate_yes">On</label>
+                        <label for="animate_yes">Açık</label>
                     </td>
                     <td>
                         <input type="radio" id="animate_yes" name="animate" value="1" onclick="window.enableAnimate();">
                     </td>
                     <td>
-                        <label for="animate_no">Off</label>
+                        <label for="animate_no">Kapalı</label>
                     </td>
                     <td>
                         <input type="radio" id="animate_no" name="animate" value="0" onclick="window.disableAnimate();">
@@ -86,16 +86,16 @@
                 </tr>
                 <tr>
                     <td>
-                        Music:
+                        Müzik:
                     </td>
                     <td>
-                        <label for="audio_yes">On</label>
+                        <label for="audio_yes">Açık</label>
                     </td>
                     <td>
                         <input type="radio" id="audio_yes" name="audio" value="1" onclick="window.enableAudio();">
                     </td>
                     <td>
-                        <label for="audio_no">Off</label>
+                        <label for="audio_no">Kapalı</label>
                     </td>
                     <td>
                         <input type="radio" id="audio_no" name="audio" value="0" onclick="window.disableAudio();">
@@ -104,14 +104,14 @@
 
                 <tr>
                     <td>
-                        <button onclick="window.hideOptions();">Close</button>
+                        <button onclick="window.hideOptions();">Kapat</button>
                     </td>
                     <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
                    <td>
-                        <button onclick="window.showMods();">Mods</button>
+                        <button onclick="window.showMods();">Modlar</button>
                     </td>
 
                 </tr>
@@ -122,144 +122,144 @@
     <div id="save" class="overlay" style="display: none;">
         <table id="saves_table" class="overlay_top">
             <tr>
-                <td>Auto-0</td>
+                <td>Oto-0</td>
                 <td>
-                    <button class="b save_button" id="save_button_a0">Save</button>
+                    <button class="b save_button" id="save_button_a0">Kaydet</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_a0">Delete</button>
+                    <button class="b delete_button" id="delete_button_a0">Sil</button>
                 </td>
                 <td class="save_info" id="save_info_a0"></td>
                 <td>
-                    <button class="b export_button" id="export_button_a0">Export</button>
+                    <button class="b export_button" id="export_button_a0">İndir</button>
                 </td>
             </tr>
             <tr>
-                <td>Auto-1</td>
+                <td>Oto-1</td>
                 <td>
-                    <button class="b save_button" id="save_button_a1">Save</button>
+                    <button class="b save_button" id="save_button_a1">Kaydet</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_a1">Delete</button>
+                    <button class="b delete_button" id="delete_button_a1">Sil</button>
                 </td>
                 <td class="save_info" id="save_info_a1"></td>
                 <td>
-                    <button class="b export_button" id="export_button_a1">Export</button>
+                    <button class="b export_button" id="export_button_a1">İndir</button>
                 </td>
             </tr>
             
             <tr>
                 <td>0</td>
                 <td>
-                    <button class="b save_button" id="save_button_0">Save</button>
+                    <button class="b save_button" id="save_button_0">Kaydet</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_0">Delete</button>
+                    <button class="b delete_button" id="delete_button_0">Sil</button>
                 </td>
                 <td class="save_info" id="save_info_0"></td>
                 <td>
-                    <button class="b export_button" id="export_button_0">Export</button>
+                    <button class="b export_button" id="export_button_0">İndir</button>
                 </td>
             </tr>
             <tr>
                 <td>1</td>
                 <td>
-                    <button class="b save_button" id="save_button_1">Save</button>
+                    <button class="b save_button" id="save_button_1">Kaydet</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_1">Delete</button>
+                    <button class="b delete_button" id="delete_button_1">Sil</button>
                 </td>
                 <td class="save_info" id="save_info_1"></td>
                 <td>
-                    <button class="b export_button" id="export_button_1">Export</button>
+                    <button class="b export_button" id="export_button_1">İndir</button>
                 </td>
             </tr>
             <tr>
                 <td>2</td>
                 <td>
-                    <button class="b save_button" id="save_button_2">Save</button>
+                    <button class="b save_button" id="save_button_2">Kaydet</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_2">Delete</button>
+                    <button class="b delete_button" id="delete_button_2">Sil</button>
                 </td>
                 <td class="save_info" id="save_info_2"></td>
                 <td>
-                    <button class="b export_button" id="export_button_2">Export</button>
+                    <button class="b export_button" id="export_button_2">İndir</button>
                 </td>
             </tr>
             <tr>
                 <td>3</td>
                 <td>
-                    <button class="b save_button" id="save_button_3">Save</button>
+                    <button class="b save_button" id="save_button_3">Kaydet</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_3">Delete</button>
+                    <button class="b delete_button" id="delete_button_3">Sil</button>
                 </td>
                 <td class="save_info" id="save_info_3"></td>
                 <td>
-                    <button class="b export_button" id="export_button_3">Export</button>
+                    <button class="b export_button" id="export_button_3">İndir</button>
                 </td>
             </tr>
             <tr>
                 <td>4</td>
                 <td>
-                    <button class="b save_button" id="save_button_4">Save</button>
+                    <button class="b save_button" id="save_button_4">Kaydet</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_4">Delete</button>
+                    <button class="b delete_button" id="delete_button_4">Sil</button>
                 </td>
                 <td class="save_info" id="save_info_4"></td>
                 <td>
-                    <button class="b export_button" id="export_button_4">Export</button>
+                    <button class="b export_button" id="export_button_4">İndir</button>
                 </td>
             </tr>
             <tr>
                 <td>5</td>
                 <td>
-                    <button class="b save_button" id="save_button_5">Save</button>
+                    <button class="b save_button" id="save_button_5">Kaydet</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_5">Delete</button>
+                    <button class="b delete_button" id="delete_button_5">Sil</button>
                 </td>
                 <td class="save_info" id="save_info_5"></td>
                 <td>
-                    <button class="b export_button" id="export_button_5">Export</button>
+                    <button class="b export_button" id="export_button_5">İndir</button>
                 </td>
             </tr>
             <tr>
                 <td>6</td>
                 <td>
-                    <button class="b save_button" id="save_button_6">Save</button>
+                    <button class="b save_button" id="save_button_6">Kaydet</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_6">Delete</button>
+                    <button class="b delete_button" id="delete_button_6">Sil</button>
                 </td>
                 <td class="save_info" id="save_info_6"></td>
                 <td>
-                    <button class="b export_button" id="export_button_6">Export</button>
+                    <button class="b export_button" id="export_button_6">İndir</button>
                 </td>
             </tr>
             <tr>
                 <td>7</td>
                 <td>
-                    <button class="b save_button" id="save_button_7">Save</button>
+                    <button class="b save_button" id="save_button_7">Kaydet</button>
                 </td>
                 <td>
-                    <button class="b delete_button" id="delete_button_7">Delete</button>
+                    <button class="b delete_button" id="delete_button_7">Sil</button>
                 </td>
                 <td class="save_info" id="save_info_7"></td>
                 <td>
-                    <button class="b export_button" id="export_button_7">Export</button>
+                    <button class="b export_button" id="export_button_7">İndir</button>
                 </td>
             </tr>
             <tr>
                 <td colspan="5">
-                    <label for="import_save">Import save file:</label> <input type="file" id="import_save" onchange="dendryUI.importSave('import_save');"></input>
+                    <label for="import_save">Save dosyası aktar:</label> <input type="file" id="import_save" onchange="dendryUI.importSave('import_save');"></input>
                 </td>
             </tr> 
             <tr>
                 <td>
-                    <button onclick="dendryUI.hideSaveSlots();">Close</button>
+                    <button onclick="dendryUI.hideSaveSlots();">Kapat</button>
                 </td>
             </tr>
         </table>
@@ -277,22 +277,22 @@
     <div id='page'>
         <div id="mid_panel">
             <header>
-                <h1 id="game-title">Social Democracy: An Alternate History</h1>
-                <h2 id="game-author">Autumn Chen</h2>
+                <h1 id="game-title">r/kuir: Devrimin Evrimi</h1>
+                <h2 id="game-author">heike lola</h2>
 
                 <div id="header-links">
                     <a id="stats-link" onclick="window.showStats();" href="#">Library</a>
-                    <a onclick="dendryUI.showSaveSlots();" href="#">Save/Load</a>
-                    <a onclick="window.showOptions();" href="#">Options</a>
+                    <a onclick="dendryUI.showSaveSlots();" href="#">Kaydet/Yükle</a>
+                    <a onclick="window.showOptions();" href="#">Seçenekler</a>
                 </div>
             </header>
             <div id="tools_wrapper">
                 <div id='stats_sidebar' class='tools left'>
                     <div class="tab_container">
-                        <button class="tab_button active" id="main_tab" onclick="window.changeTab('status', 'main_tab');">Main</button>
-                        <button class="tab_button" id="politics_tab" onclick="window.changeTab('status.politics', 'politics_tab');">Politics</button>
-                        <button class="tab_button" id="paramilitary_tab" onclick="window.changeTab('status.paramilitaries', 'paramilitary_tab');">Defense</button>
-                        <button class="tab_button" id="poll_tab" onclick="window.changeTab('status.polls', 'poll_tab');">Polls</button>
+                        <button class="tab_button active" id="main_tab" onclick="window.changeTab('status', 'main_tab');">Ana</button>
+                        <button class="tab_button" id="politics_tab" onclick="window.changeTab('status.politics', 'politics_tab');">Siyaset</button>
+                        <button class="tab_button" id="paramilitary_tab" onclick="window.changeTab('status.paramilitaries', 'paramilitary_tab');">Savunma</button>
+                        <button class="tab_button" id="poll_tab" onclick="window.changeTab('status.polls', 'poll_tab');">Anketler</button>
                     </div>
                     <div id="qualities">
                     </div>
