@@ -13,35 +13,6 @@
     <script src="d3-linegraph.js"></script>
     <script src="core.js"></script>
     <script src="game.js"></script>
-
-    <style>
-  /* Slightly move the header to the left */
-  #mid_panel header {
-    margin-left: 10%; /* Adjust this value to move the header slightly to the left */
-  }
-
-  #game-title {
-    font-size: 1em;
-    margin-bottom: 0.5em;
-  }
-
-  #game-author {
-    font-size: 0.5em;
-    color: #666; /* Optional: for a lighter author name */
-  }
-
-  #header-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Spacing between the links */
-  }
-
-  #header-links a {
-    text-decoration: none;
-    color: #000;
-  }
-</style>
-
   </head>
   <body>
     <div class="background" id="bg2">
@@ -301,21 +272,19 @@
 
         <div class="sprite" id="bottomLeftSprite"></div>
         <div class="sprite" id="bottomRightSprite"></div>
-<div id="page">
-  <div id="mid_panel">
-    <header>
-      <h1 id="game-title">r/kuir: Devrimin Evrimi</h1>
-      <h2 id="game-author">heike lola</h2>
+    </div>
 
-      <div id="header-links">
-        <a id="stats-link" onclick="window.showStats();" href="#">Library</a>
-        <a onclick="dendryUI.showSaveSlots();" href="#">Kaydet/Yükle</a>
-        <a onclick="window.showOptions();" href="#">Seçenekler</a>
-      </div>
-    </header>
-  </div>
-</div>
+    <div id='page'>
+        <div id="mid_panel">
+            <header>
+                <h1 id="game-title">r/kuir: Devrimin Evrimi</h1>
+                <h2 id="game-author">heike lola</h2>
 
+                <div id="header-links">
+                    <a id="stats-link" onclick="window.showStats();" href="#">Library</a>
+                    <a onclick="dendryUI.showSaveSlots();" href="#">Kaydet/Yükle</a>
+                    <a onclick="window.showOptions();" href="#">Seçenekler</a>
+                </div>
             </header>
             <div id="tools_wrapper">
                 <div id='stats_sidebar' class='tools left'>
