@@ -28,10 +28,10 @@ footer a {
   padding-right: 1em;
 }
 header {
-  text-align: right
+  text-align: left
 }
 #header-links {
-  text-align: left;
+  text-align: right;
   float: left;
   display: inline-block;
   margin-bottom: 0.5em;
