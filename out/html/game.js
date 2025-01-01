@@ -16,7 +16,7 @@
     // Add your custom code here.
   };
 
-  var TITLE = "Social Democracy: An Alternate History" + '_' + "Autumn Chen";
+  var TITLE = "r/kuir: Devrimin Evrimi" + '_' + "heike lola";
 
   // the url is a link to game.json
   // test url: https://aucchen.github.io/social_democracy_mods/v0.1.json
@@ -175,7 +175,7 @@
 
   window.changeTab = function(newTab, tabId) {
       if (tabId == 'poll_tab' && dendryUI.dendryEngine.state.qualities.historical_mode) {
-          window.alert('Polls are not available in historical mode.');
+          window.alert('Anketler tarihsel modda kullanılamaz.');
           return;
       }
       var tabButton = document.getElementById(tabId);
@@ -231,7 +231,7 @@
 
   window.onload = function() {
     window.dendryUI.loadSettings({show_portraits: false});
-    window.pinnedCardsDescription = "Advisor cards - actions are only usable once per 6 months.";
+    window.pinnedCardsDescription = "Danışman kartları - eylemler her 6 ayda bir kullanılabilir.";
   };
 
 }());
